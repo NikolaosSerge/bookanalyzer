@@ -13,8 +13,6 @@ from django.contrib.auth.decorators import login_required
 
 #Libraries
 import re
-import pickle
-import math
 import pandas as pd
 import numpy as np
 import json
