@@ -57,9 +57,6 @@ def viewBooks(request, books_pk):
     wordsmedian = freqwords.median()
     wordcount = len(words[0])
     unwordcount = len(words[1])
-
-    book.data=words
-    book.save()
     if request.is_ajax() :
         if request.POST.get("code")=="context":
             text=request.POST.get("query",False)

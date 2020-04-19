@@ -1,0 +1,22 @@
+{% extends 'bookAnalyzer/base.html' %}
+{% block content %}
+{% load static %}
+  <div class="Home">
+
+    <h1 id ='doug'>
+
+      Welcome to the Bookalyzer!
+      <h3>Here you can upload a book<br>
+      and receive helpful information about its contents <br>
+      have fun ! <br></h3>
+
+      <form class="" action="{% url 'bookAnalyzer:bookPre' %}" method="GET">
+        <button type="submit" class="btn btn-primary">Start!</button>
+      </form>
+
+    </h1>
+    <br>
+
+  </div>
+
+{% endblock %}
