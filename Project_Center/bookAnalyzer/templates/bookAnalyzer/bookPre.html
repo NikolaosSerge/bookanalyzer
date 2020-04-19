@@ -1,0 +1,18 @@
+
+{% extends 'bookAnalyzer/base.html' %}
+ {% block content %}
+{% load static %}
+
+<div class="con">
+  <form class="" action="{% url 'bookAnalyzer:bookPre' %}" method="POST">
+    {% csrf_token %}
+    <input placeholder="Title" type="text" name="title" maxlength="100" required="" id="id_title"><br>
+    <textarea placeholder="Text for analysis:" name="contents" cols="40" rows="10" id="id_contents"></textarea>
+    <br>
+    <button type="submit" name="button">submit</button>
+  </form>
+
+</div>
+
+
+ {% endblock %}

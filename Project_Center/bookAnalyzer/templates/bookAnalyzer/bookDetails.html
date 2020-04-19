@@ -1,0 +1,16 @@
+{% extends 'bookAnalyzer/base.html' %}
+ {% block content %}
+{% load static %}
+
+<div class="bookT">
+  {% for bok in book %}
+  <article  class="" id = "{{ bok.id }}" onclick="location.href='{% url 'bookAnalyzer:viewBooks' bok.id %}';" style="cursor: pointer;">
+
+      <a id="bok_title_link"  href="{% url 'bookAnalyzer:viewBooks' bok.id %}"> <h5 class='titles'> {{ bok.title }} </h5>
+       </a>
+  </article>
+  {% endfor %}
+</div>
+
+
+ {% endblock %}

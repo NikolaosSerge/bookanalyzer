@@ -1,0 +1,193 @@
+
+  body {
+    width: 1250px;
+    margin: auto;
+    background:linear-gradient(to top, #222 ,  gray) no-repeat;
+    font-family: 'Gotu', sans-serif;
+    color: #eff0b3;
+  }
+
+  #navbar {
+    background:linear-gradient(to top, lightcyan ,  #3a43b2) no-repeat;
+    border-radius:5px 5px 40px 40px;
+    box-shadow:2px 3px 4px #000;
+
+  }
+
+  .sack {
+    height:100vh;/* view height*/
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+  }
+
+.todos article:hover {
+  border-radius: 25px;
+  max-width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px;
+  /*/*text-align: justify;**/
+  box-shadow:2px 5px 4px #000;
+  background-image: linear-gradient(to right, lightcyan , cyan);
+  height: 300px;
+  margin: 2px;
+}
+.todos article {
+    border-radius: 25px;
+    max-width: 18%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    box-shadow:2px 2px 4px #000;
+    background-image: linear-gradient(to right, lightcyan , lightblue);
+    height: 150px;
+    margin: 2px;
+    transition:all 0.4s;
+    overflow: hidden;
+}
+#BookTitle{
+  text-align: center;
+  margin: auto;
+  max-width: 30%;
+}
+#basicInfo{
+  max-width: 50%;
+  border: 5px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ }
+ #basicInfo td, th,thead {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#basicInfo tr:nth-child(even) {
+  background-color: gray;
+}
+#words{
+  display: none;
+}
+#pager{
+  width:30px;
+  max-width: 20%;
+margin:auto;
+}
+.bookWords:hover{
+  background-color: lightcyan;
+}
+
+.bookWords2:hover{
+  background-color: lightcyan;
+}
+.Word:hover{
+  background-color: lightcyan;
+}
+.Word2:hover{
+  background-color: lightcyan;
+}
+.matches:hover{
+  background-color: lightcyan;
+}
+
+.Home{
+  border-radius: 25px;
+  display: block;
+  margin: 100px;
+  margin-bottom: 250px;
+  padding: 50px;
+  text-align: center;
+  background-color: lightgray;
+  box-shadow:2px 3px 4px #000;
+  color: gray;
+}
+.cont {
+  display: inline-block;
+}
+.console {
+  display: inline-block;
+    border: 1px solid #dddddd;
+    width: 58%;
+    height: 85vh;
+    padding: 8px;
+    border-radius: 25px 0px 25px 0px;
+    background-color: gray;
+    overflow: auto;
+}
+.console::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  display: none;
+
+}
+.analysis{
+ display: inline-block;
+width: 40%;
+float: left;
+}
+.output {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 90%;
+    height:61vh;
+    display: block;
+    overflow: auto;
+
+}
+.output::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  display: none;
+
+}
+
+
+#Phrases tr:nth-child(even) {
+  background-color: gray;
+}
+
+
+
+.bookT{
+  position: relative;
+
+}
+.inpFT{
+  width: 60px;
+}
+.con{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-right:50%;
+  transform: translate(-50%, -50%)
+}
+
+.titles{
+  border-radius: 10px;
+  max-width: 25%;
+  display: block;
+  vertical-align: top;
+  padding: 8px;
+  box-shadow:2px 2px 4px #000;
+  background-image: linear-gradient(to right, yellow , cyan);
+  height: 30px;
+  margin: 2px;
+  transition:all 0.4s;
+  overflow: hidden;
+  color: black;
+
+
+}
+#id_title{
+  border-radius: 0px 25px 0px 0px;
+    max-width: 100%;
+    display: inline;
+    width: 750px;
+
+}
+#id_contents{
+  padding: 8px;
+  background-color: lightcyan;
+  border-radius: 0px 0px 0px 25px;
+  width: 750px;
+  height: 400px;
+}

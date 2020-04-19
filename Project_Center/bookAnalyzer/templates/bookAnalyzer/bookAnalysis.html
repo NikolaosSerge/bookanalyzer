@@ -1,0 +1,59 @@
+{% extends 'bookAnalyzer/base.html' %}
+ {% block content %}
+{% load static %}
+
+<div class="">
+<h2 id = "BookTitle">{{ book.title }}</h2>
+  <br>
+  <article class="analysis">
+    {{ analysis }}<br>
+    <table id="basicInfo">
+
+      <tr>
+        <th><h6>Total </h6></th>
+        <th><h6>Unique </h6></th>
+        <th> <h6>Median Freq</h6> </th>
+      </tr>
+      <tr>
+        <td>{{ wordcount }}</td>
+        <td>{{ unwordcount }}</td>
+        <td>{{ median }}</td>
+      </tr>
+
+    </table>
+    <br>
+    <br>
+    <input placeholder="upper" class="inpFT" type="text" name="from" value="">
+    <input placeholder="lower" class="inpFT" type="text" name="to" value="">
+    
+    {% csrf_token %}
+    <input class="inp" type="text" name="query" placeholder="Lookup word occurences." value="">
+
+    <br>
+
+
+   <div class="output">
+      console
+    </div>
+
+  </article>
+
+  <div class="pagerButtons">
+    <button hidden type="button" name="Prev">Prev</button>
+    <button hidden type="button" name="Next">Next</button>
+    <input type="text" id="pager" name="pager" value="" placeholder="0">
+    <span class="pages"></span>
+    <span class="pages"></span>
+  </div>
+
+  <div class="console">
+
+  </div>
+</div>
+<span  id="words">{{ words }}</span>
+<script type="text/javascript">
+  url = "{% url 'bookAnalyzer:viewBooks'  book.id %}"
+  csrf =  "{{ csrf_token }}"
+</script>
+
+ {% endblock %}

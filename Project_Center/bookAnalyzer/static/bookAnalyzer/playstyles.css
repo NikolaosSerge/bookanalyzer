@@ -1,0 +1,15 @@
+body {
+  background-color: #222;
+  width: 1250px;
+  height: 1250px;
+  margin: auto;
+}
+
+.console {
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 8px;
+  border-radius: 25px 0px 25px 0px;
+  background-color: lightcyan;
+}
